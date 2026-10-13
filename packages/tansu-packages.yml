@@ -1,0 +1,14 @@
+name: Tansu Packages
+generated: '2026-10-13'
+method: searched
+source: https://crates.io/api/v1/crates/tansu
+note: The tansu crate is the broker itself (Apache Kafka compatible broker), not an HTTP client SDK. The project has since been renamed Nisshi (README of github.com/nisshi-io/nisshi, "Nisshi (nee Tansu)"); github.com/tansu-io/tansu redirects there.
+packages:
+- name: tansu
+  registry: crates.io
+  url: https://crates.io/crates/tansu
+  language: Rust
+  official: true
+  version: 0.6.0
+  published: '2026-03-13'
+  repository: https://github.com/tansu-io/tansu

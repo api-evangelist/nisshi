@@ -1,23 +1,54 @@
 aid: tansu
 name: Tansu
-description: 'Tansu is a company surfaced via the API Evangelist harvest backlog (source: market-gap:streaming-kafka)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Tansu is an open-source (Apache-2.0), Rust-built, Apache Kafka compatible message broker that stores data in S3, PostgreSQL, SQLite/libSQL or memory and can write schema-validated topics (JSON Schema, Avro, Protocol Buffers) as Apache Iceberg or Delta Lake tables. Its surface is the Kafka wire protocol rather than an HTTP API, and no OpenAPI, AsyncAPI or GraphQL contract is published. The project has been renamed Nisshi (README: ''Nisshi (nee Tansu)''); github.com/tansu-io/tansu redirects to github.com/nisshi-io/nisshi and tansu.io no longer resolves in DNS.'
 url: https://raw.githubusercontent.com/api-evangelist/tansu/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:streaming-kafka
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
 - Company
-apis: []
+- Kafka
+- Message Broker
+- Streaming
+- Open Source
+- Apache Iceberg
+- Delta Lake
+- Rust
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Hosts
+  url: hosts/tansu-hosts.yml
+- type: SDKs
+  url: packages/tansu-packages.yml
+- type: Packages
+  url: packages/tansu-packages.yml
 - type: Website
   url: https://tansu.io
+- type: GitHubOrganization
+  url: https://github.com/tansu-io
+- type: SourceCode
+  url: https://github.com/tansu-io/tansu
+apis: []
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Tansu is a Kafka-wire-protocol broker with no published HTTP contract, its tansu.io site no longer resolves in DNS, and the repo now redirects to the renamed Nisshi project (github.com/nisshi-io/nisshi).
+  evidence:
+  - url: https://tansu.io
+    status: 0
+  - url: https://github.com/tansu-io/tansu
+    status: 200
+  checked: '2026-10-13'
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v5
