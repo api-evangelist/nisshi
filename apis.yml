@@ -1,14 +1,17 @@
-aid: tansu
-name: Tansu
-description: 'Tansu is an open-source (Apache-2.0), Rust-built, Apache Kafka compatible message broker that stores data in S3, PostgreSQL, SQLite/libSQL or memory and can write schema-validated topics (JSON Schema, Avro, Protocol Buffers) as Apache Iceberg or Delta Lake tables. Its surface is the Kafka wire protocol rather than an HTTP API, and no OpenAPI, AsyncAPI or GraphQL contract is published. The project has been renamed Nisshi (README: ''Nisshi (nee Tansu)''); github.com/tansu-io/tansu redirects to github.com/nisshi-io/nisshi and tansu.io no longer resolves in DNS.'
-url: https://raw.githubusercontent.com/api-evangelist/tansu/refs/heads/main/apis.yml
+aid: nisshi
+name: Nisshi
+description: 'Nisshi (formerly Tansu) is an open-source (Apache-2.0), Rust-built, Apache Kafka compatible message broker that stores data in S3, PostgreSQL, SQLite/libSQL or memory and can write schema-validated topics (JSON Schema, Avro, Protocol Buffers) as Apache Iceberg or Delta Lake tables. Its surface is the Kafka wire protocol rather than an HTTP API, and no OpenAPI, AsyncAPI or GraphQL contract is published. The project has been renamed Nisshi (README: ''Nisshi (nee Tansu)''); github.com/tansu-io/tansu redirects to github.com/nisshi-io/nisshi and tansu.io no longer resolves in DNS.'
+url: https://raw.githubusercontent.com/api-evangelist/nisshi/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:streaming-kafka
 x-tier: profiled
-x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
+x-tier-reason: 'enrichment pass 2026-10-13 (local-v5; was harvest); minimal 2026-10-14: Kafka-wire-protocol broker, no published HTTP/OpenAPI/AsyncAPI contract, 0 operations'
+x-aliases:
+- tansu
+x-renamed-from: tansu
 specificationVersion: '0.20'
 created: '2026-10-13'
-modified: '2026-10-13'
+modified: '2026-10-14'
 tags:
 - Company
 - Kafka
@@ -25,17 +28,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Hosts
-  url: hosts/tansu-hosts.yml
+  url: hosts/nisshi-hosts.yml
 - type: SDKs
-  url: packages/tansu-packages.yml
+  url: packages/nisshi-packages.yml
 - type: Packages
-  url: packages/tansu-packages.yml
+  url: packages/nisshi-packages.yml
 - type: Website
-  url: https://tansu.io
+  url: https://nisshi.io
+- type: Documentation
+  url: https://docs.nisshi.io
 - type: GitHubOrganization
-  url: https://github.com/tansu-io
+  url: https://github.com/nisshi-io
 - type: SourceCode
-  url: https://github.com/tansu-io/tansu
+  url: https://github.com/nisshi-io/nisshi
 apis: []
 x-coverage:
   state: unreadable
@@ -49,6 +54,6 @@ x-coverage:
   checked: '2026-10-13'
 x-enrichment:
   date: '2026-10-13'
-  status: enriched
+  status: minimal
   artifacts_added: 2
   pass: local-v5

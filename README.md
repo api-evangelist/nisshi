@@ -1,4 +1,4 @@
-# Tansu
+# Nisshi (formerly Tansu)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -65,4 +65,4 @@
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
 Tansu is a company surfaced via the API Evangelist harvest backlog (source: market-gap:streaming-kafka) and added to the network as a stub for full-pipeline profiling.
-- https://tansu.io
+- https://nisshi.io
